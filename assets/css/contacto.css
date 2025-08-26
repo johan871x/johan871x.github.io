@@ -1,0 +1,87 @@
+#contacto {
+  max-width: 900px;
+  margin: 2rem auto 3rem auto;
+  padding: 2rem;
+  background-color: rgba(20, 0, 0, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 0 15px #ff2222cc;
+  width: calc(100% - 40px);
+  color: #eee;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+#contacto h2 {
+  color: #ff4444;
+  text-shadow: 0 0 10px #ff4444;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ff4444;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+#contacto p {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 5px #a10000;
+}
+
+/* Formulario estilos */
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#contacto label {
+  font-weight: 700;
+  color: #ff4444;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+  background-color: #220000cc;
+  border: 2px solid #ff3333;
+  border-radius: 6px;
+  color: #eee;
+  padding: 10px 12px;
+  font-size: 1rem;
+  font-family: 'Share Tech Mono', monospace;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+#contacto input[type="text"]:focus,
+#contacto input[type="email"]:focus,
+#contacto textarea:focus {
+  border-color: #ff6666;
+  outline: none;
+  background-color: #330000cc;
+}
+
+#contacto textarea {
+  min-height: 120px;
+}
+
+#contacto button {
+  background-color: #ff3333;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 14px;
+  cursor: pointer;
+  text-shadow: 0 0 5px #a10000;
+  transition: background-color 0.3s ease;
+}
+
+#contacto button:hover {
+  background-color: #ff5555;
+}

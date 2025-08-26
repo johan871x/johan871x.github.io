@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto - Rock Infernal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Share Tech Mono', monospace;
+      color: #f0f0f0;
+      background-image: url('https://i.pinimg.com/1200x/a9/19/59/a919598fc70c9d43b6d16a22cc16aefe.jpg'); 
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      color: #eee;
+      background-color: transparent;
+      line-height: 1.5;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #ff3b3b;
+      text-shadow: 0 0 8px #ff3b3b, 0 0 20px #a10000;
+      width: 100%;
+      background-color: rgba(20, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 4px;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #ff6666;
+    }
+
+    /* Navegación */
+    nav {
+      background-color: rgba(20, 20, 20, 0.85);
+      box-shadow: 0 0 10px #ff0000cc;
+      width: 100%;
+      padding: 1rem 0;
+      margin-bottom: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 0 1rem;
+    }
+
+    nav ul li a {
+      color: #ff3333;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+      text-shadow: 0 0 5px #ff3333;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:focus {
+      color: #fff;
+      text-shadow: 0 0 15px #ff5555;
+    }
+
+    /* Contenedor principal centrado y con fondo oscuro */
+    main.contact-container {
+      max-width: 600px;
+      background-color: rgba(10,10,10,0.75);
+      margin: 3rem auto 3rem auto;
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #ff0000cc;
+      width: 90%;
+      font-size: 1.1rem;
+    }
+
+    main.contact-container h2 {
+      color: #ff4444;
+      text-shadow: 0 0 10px #ff4444;
+      margin-bottom: 1rem;
+      font-size: 2.2rem;
+      border-bottom: 2px solid #ff4444;
+      padding-bottom: 0.6rem;
+      text-align: center;
+    }
+
+    main.contact-container p {
+      margin-bottom: 1.5rem;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    /* Formulario */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    label {
+      font-weight: 700;
+      color: #ff6666;
+      text-shadow: 0 0 4px #ff4444;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      background-color: #220000cc;
+      border: 1.5px solid #ff4444;
+      border-radius: 6px;
+      padding: 0.8rem 1rem;
+      color: #eee;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 1rem;
+      resize: vertical;
+      box-shadow: 0 0 6px #aa0000cc;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: #ff2222;
+      outline: none;
+      box-shadow: 0 0 15px #ff2222;
+      background-color: #330000dd;
+    }
+
+    textarea {
+      min-height: 100px;
+    }
+
+    button {
+      background-color: #ff3333;
+      border: none;
+      padding: 1rem 0;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 0 12px #ff2222cc;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover,
+    button:focus {
+      background-color: #ff5555;
+      box-shadow: 0 0 20px #ff4444cc;
+      outline: none;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: rgba(20, 0, 0, 0.85);
+      color: #ff2222;
+      text-shadow: 0 0 7px #ff2222;
+      margin-top: auto;
+      border-top: 1px solid #ff2222;
+      width: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      main.contact-container {
+        margin: 2rem auto;
+        padding: 1.5rem 1.5rem;
+      }
+      button {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rock Infernal</h1>
+    <p>La pasión por el rock y el metal extremo</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="bandas.html">Bandas</a></li>
+      <li><a href="generos.html">Géneros</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main class="contact-container">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes bandas para recomendar o quieres compartir tu pasión por el rock? Escríbenos, ¡queremos saber de ti!</p>
+    <form action="#" method="POST" novalidate>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+    <p style="margin-top: 2rem; text-align:center; font-size:0.9rem; color:#ff6666;">
+      También puedes escribirnos directamente a: <strong>infierno@rockmail.com</strong>
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 Rock Infernal. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

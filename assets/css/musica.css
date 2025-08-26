@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Share Tech Mono', monospace;
+  color: #f0f0f0;
+  background-image: url('https://i.pinimg.com/1200x/a9/19/59/a919598fc70c9d43b6d16a22cc16aefe.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body y html con altura completa */
+html, body {
+  height: 100%;
+  font-family: 'Share Tech Mono', monospace, monospace;
+  color: #eee;
+  background-color: transparent; /* No tocamos el fondo */
+  line-height: 1.5;
+}
+
+/* Contenido principal centrado y ancho máximo grande */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header centrado y ancho 100% */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #ff3b3b;
+  text-shadow: 0 0 8px #ff3b3b, 0 0 20px #a10000;
+  width: 100%;
+  background-color: rgba(20, 0, 0, 0.6);
+}
+
+/* Header texto */
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 4px;
+  margin-bottom: 0.3rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #ff6666;
+}
+
+/* Navegación ancho 100% */
+nav {
+  background-color: rgba(20, 20, 20, 0.85);
+  box-shadow: 0 0 10px #ff0000cc;
+  width: 100%;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+nav ul li a {
+  color: #ff3333;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-shadow: 0 0 5px #ff3333;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #fff;
+  text-shadow: 0 0 15px #ff5555;
+}
+
+/* Secciones con ancho máximo y relleno para extenderse bien */
+section {
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
+  padding: 1.5rem 2rem;
+  background-color: rgba(10, 10, 10, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 0 15px #aa0000aa;
+  width: calc(100% - 40px); /* Para que ocupe casi todo el ancho con padding */
+  min-width: 280px; /* Para que no se reduzca demasiado en móvil */
+}
+
+section h2 {
+  color: #ff4444;
+  text-shadow: 0 0 10px #ff4444;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  border-bottom: 2px solid #ff4444;
+  padding-bottom: 0.5rem;
+}
+
+/* Listas de bandas con flexbox */
+.bandas,
+.genero ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.bandas li,
+.genero ul li {
+  background-color: #330000cc;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #880000bb;
+  font-weight: 600;
+  flex: 1 1 140px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.bandas li:hover,
+.genero ul li:hover {
+  background-color: #660000ee;
+  cursor: default;
+}
+
+/* Player */
+.player {
+  margin-bottom: 1.5rem;
+  background-color: #220000cc;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #aa0000bb;
+}
+
+.player p {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-shadow: 0 0 6px #ff2222;
+}
+
+/* Sobre Nosotros y Contacto */
+#nosotros p,
+#contacto p {
+  font-size: 1.1rem;
+  color: #eee;
+  line-height: 1.6;
+  padding-bottom: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Footer ancho completo */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background-color: rgba(20, 0, 0, 0.85);
+  color: #ff2222;
+  text-shadow: 0 0 7px #ff2222;
+  margin-top: auto;
+  border-top: 1px solid #ff2222;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .bandas,
+  .genero ul {
+    flex-direction: column;
+  }
+}
